@@ -31,10 +31,7 @@ public class Product {
 	}
 	
 	public String priceTag() {
-		StringBuilder sb = new StringBuilder();
-		sb.append(getName() + " $ ");
-		sb.append(String.format("%.2f", getPrice()));				
-		return sb.toString();
+		return getName() + " $ " + String.format("%.2f", getPrice());
 	}
 	
 }
